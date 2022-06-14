@@ -17,7 +17,7 @@ export const getUser = (req, res) => {
 export const createUser = (req, res) => {
     const user = req.body;
 
-    user.push({...user, id: uuidv4()});
+    users.push({...user, id: uuidv4()});
 
     res.send('User successfully created!');
 }
